@@ -53,17 +53,17 @@ WebUI.click(findTestObject('Object Repository/SMB Site/locationPopup'))
 WebUI.delay(10)
 
 //Verify the zipcode populated
-/*attribute = WebUI.getAttribute(findTestObject('Object Repository/SMB Site/zipCode'), 'value')
+attribute = WebUI.getAttribute(findTestObject('Object Repository/SMB Site/zipCode'), 'value')
 if (WebUI.verifyEqual(attribute, GlobalVariable.zipcode) == true)
 {
 	WebUI.delay(5)
 }
 
 else
-{*/
-//WebUI.setText(findTestObject('Object Repository/SMB Site/zipCode'),GlobalVariable.zipcode)
+{
+WebUI.setText(findTestObject('Object Repository/SMB Site/zipCode'),GlobalVariable.zipcode)
 WebUI.sendKeys(findTestObject('Object Repository/SMB Site/zipCode') , Keys.chord(Keys.TAB)) 
-
+}
   
 //Click Check Availability Button
 WebUI.click(findTestObject('Object Repository/SMB Site/checkAvailabilityButton'))
