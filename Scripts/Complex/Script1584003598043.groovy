@@ -50,6 +50,7 @@ WebUI.setText(findTestObject('Object Repository/SMB Site/address'),GlobalVariabl
 WebUI.sendKeys(findTestObject('Object Repository/SMB Site/address') , Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Object Repository/SMB Site/locationPopup'))
+WebUI.delay(10)
 
 //Verify the zipcode populated
 /*attribute = WebUI.getAttribute(findTestObject('Object Repository/SMB Site/zipCode'), 'value')
