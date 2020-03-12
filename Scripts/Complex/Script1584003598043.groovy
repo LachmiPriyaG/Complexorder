@@ -61,7 +61,7 @@ if (WebUI.verifyEqual(attribute, GlobalVariable.zipcode) == true)
 
 else
 {*/
-WebUI.setText(findTestObject('Object Repository/SMB Site/zipCode'),GlobalVariable.zipcode)
+//WebUI.setText(findTestObject('Object Repository/SMB Site/zipCode'),GlobalVariable.zipcode)
 WebUI.sendKeys(findTestObject('Object Repository/SMB Site/zipCode') , Keys.chord(Keys.TAB)) 
 
   
