@@ -13,6 +13,6 @@ steps:
 - task: katalonTask@0
   displayName: 'Execute Katalon Studio project'
   inputs:
-    version: '6.3.0'
+    version: '6.3.3'
     executeArgs: '-browserType="Firefox" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Complex"'
 
